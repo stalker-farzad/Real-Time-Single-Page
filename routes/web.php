@@ -20,4 +20,4 @@
 
 Auth::routes();
 
-Route::get('/{question}', 'HomeController@index')->name('home');
+Route::get('/{question}',['as'=>'home', 'HomeController@index']);

@@ -15,7 +15,8 @@
     print (session_status());
 
 
-?>
+    ?>
+
       <h1 id="var" style="text-align:center; margin-top:50px"></h1>
       <script>
           var projects = {

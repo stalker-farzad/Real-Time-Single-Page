@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -24,6 +24,10 @@ class HomeController extends Controller
      */
     public function index(){
 
+        $question=Question::latest()->first();
+        
+        return $question ; 
+    
         return view('general.home');
     }
 }
